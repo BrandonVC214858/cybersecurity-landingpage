@@ -16,7 +16,7 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="nosotros" className="flex items-center hover:text-blue-500 transition-colors">
+        <a href="about" className="flex items-center hover:text-blue-500 transition-colors">
           Nosotros
         </a>
       </Typography>
@@ -26,7 +26,7 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-medium"
       >
-        <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
+        <a href="contact" className="flex items-center hover:text-blue-500 transition-colors">
           Contactanos
         </a>
       </Typography>
@@ -53,7 +53,7 @@ export function NavbarSimple() {
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
-          href=""
+          href="/"
           variant="h6"
           className="mr-4 cursor-pointer py-1.5"
         >
