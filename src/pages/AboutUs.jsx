@@ -59,7 +59,7 @@ function AboutUs() {
               />
               <div className="ml-4">
                 <p className="text-lg font-medium text-gray-900">
-                  Manuwl de Jesus Villareal Santillano
+                  Manuel de Jesus Villareal Santillano
                 </p>
                 <p className="text-sm text-gray-600">201024</p>
               </div>
