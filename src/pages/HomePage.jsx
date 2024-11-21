@@ -1,7 +1,7 @@
 import React from "react";
 import { NavbarSimple } from "../components/Navbar";
 import { FooterWithLogo } from "../components/Footer";
-import { HorizontalCard} from "../components/Card";
+import { HorizontalCard } from "../components/Card";
 
 function HomePage() {
   return (
@@ -25,7 +25,7 @@ function HomePage() {
             image={
               "https://th.bing.com/th/id/OIP.LH0hh0FOPUWHL3wSuu1nwAHaEo?rs=1&pid=ImgDetMain"
             }
-            reference={"#"}
+            reference={"/fundamentos_seguridad"}
           />
           <HorizontalCard
             date={"11/18/2024"}
@@ -36,7 +36,7 @@ function HomePage() {
             image={
               "https://th.bing.com/th/id/R.38ea62f3e2f0f1de6410bfc9076fb996?rik=zILqz2VTOnxL9w&pid=ImgRaw&r=0"
             }
-            reference={"#"}
+            reference={"vulnerabilidades"}
           />
           <HorizontalCard
             date={"11/18/2024"}
@@ -47,7 +47,7 @@ function HomePage() {
             image={
               "https://th.bing.com/th/id/OIP.8hY7iEuwxH4jp2RDWTQMEQHaEK?rs=1&pid=ImgDetMain"
             }
-            reference={"#"}
+            reference={"vulnerabilidades_red"}
           />
           <HorizontalCard
             date={"11/18/2024"}
@@ -58,11 +58,11 @@ function HomePage() {
             image={
               "https://s2grupo.es/wp-content/uploads/2022/03/35f36139b6c263d3bcdf1436a021ad954457796e.jpeg"
             }
-            reference={"#"}
+            reference={"vulnerabilidades_hardware"}
           />
         </section>
         <section className="grid grid-cols-3 ">
-            <HorizontalCard
+          <HorizontalCard
             date={"11/18/2024"}
             title={"Vulnerabilidades de software"}
             description={
@@ -71,7 +71,7 @@ function HomePage() {
             image={
               "https://th.bing.com/th/id/OIP.CCdifzc1S8FNrnUhdjmjDwHaEo?rs=1&pid=ImgDetMain"
             }
-            reference={"#"}
+            reference={"vulnerabilidades_software"}
           />
           <HorizontalCard
             date={"11/18/2024"}
@@ -82,7 +82,7 @@ function HomePage() {
             image={
               "https://th.bing.com/th/id/OIP.CiDzaoj8yUycomGX4xYb_gHaD4?rs=1&pid=ImgDetMain"
             }
-            reference={"#"}
+            reference={"ciberataques"}
           />
           <HorizontalCard
             date={"11/18/2024"}
@@ -93,7 +93,7 @@ function HomePage() {
             image={
               "https://th.bing.com/th/id/R.ac29fe9024615039b6bf4906d1bea142?rik=34jGhUMBXB0SUQ&riu=http%3a%2f%2ftechaide.global%2fwp-content%2fuploads%2f2024%2f01%2fspear-phishing.jpeg&ehk=%2f%2bLXSTrOZ%2febBpfGqAXTaqrIl2YAPGnfKWuwBeN5fsQ%3d&risl=&pid=ImgRaw&r=0"
             }
-            reference={"#"}
+            reference={"phishing"}
           />
         </section>
       </main>

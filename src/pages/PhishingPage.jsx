@@ -2,26 +2,25 @@ import React from "react";
 import { NavbarSimple } from "../components/Navbar";
 import { FooterWithLogo } from "../components/Footer";
 
-function ContentPage() {
+function PhishingPage() {
   return (
     <div className="bg-white flex flex-col min-h-screen">
       <header>
         <NavbarSimple />
         <h1 className="text-4xl font-bold text-gray-800 text-center m-6">
-          Fundamentos de Seguridad de la Información
+          Phishing: Cómo Protegerte
         </h1>
       </header>
       <main className="flex-grow flex items-center justify-center">
         {/* Main Content Container */}
-
         <div className="max-w-4xl mx-auto bg-white shadow-md rounded-lg p-6">
           <h1 className="text-2xl font-bold text-gray-800 mb-4 text-center">
-            Guía Básica para Proteger tu Información
+            Todo lo que Necesitas Saber sobre el Phishing
           </h1>
           <p className="text-gray-600 leading-relaxed text-center mb-6">
-            Si no tienes conocimientos previos sobre seguridad de la
-            información, esta guía te ayudará a proteger tus datos, dispositivos
-            y cuentas. Sigue estos pasos para mejorar tu seguridad.
+            El phishing es una técnica de engaño utilizada para robar tu
+            información personal y financiera. Aprende a reconocerlo y a
+            protegerte con esta guía.
           </p>
           {/* Images Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -29,23 +28,24 @@ function ContentPage() {
             <div className="flex flex-col items-center">
               <img
                 src="https://via.placeholder.com/300"
-                alt="Protección de dispositivos"
+                alt="Correo falso de phishing"
                 className="rounded-lg shadow-md"
               />
               <p className="mt-3 text-gray-700 text-center">
-                Mantén tus dispositivos actualizados para evitar
-                vulnerabilidades.
+                Correos falsos que parecen reales son una herramienta común de
+                phishing.
               </p>
             </div>
             {/* Image 2 */}
             <div className="flex flex-col items-center">
               <img
                 src="https://via.placeholder.com/300"
-                alt="Contraseñas seguras"
+                alt="Enlaces engañosos"
                 className="rounded-lg shadow-md"
               />
               <p className="mt-3 text-gray-700 text-center">
-                Usa contraseñas seguras y únicas para cada cuenta.
+                Cuidado con los enlaces sospechosos que redirigen a sitios
+                falsos.
               </p>
             </div>
           </div>
@@ -53,65 +53,52 @@ function ContentPage() {
           <div className="space-y-6">
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                1. Protege tus cuentas y contraseñas
+                1. ¿Qué es el phishing?
               </h2>
               <p className="text-gray-600 leading-relaxed text-center">
-                Usa contraseñas de al menos 12 caracteres que incluyan letras,
-                números y símbolos. No uses información personal como tu nombre
-                o fecha de nacimiento. Activa la verificación en dos pasos en
-                tus cuentas más importantes.
+                Es una técnica donde los atacantes se hacen pasar por entidades
+                confiables para obtener información confidencial como
+                contraseñas o datos bancarios.
               </p>
             </section>
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                2. Actualiza tus dispositivos
+                2. Cómo reconocer un intento de phishing
               </h2>
               <p className="text-gray-600 leading-relaxed text-center">
-                Configura tus dispositivos para que se actualicen
-                automáticamente. Las actualizaciones corrigen problemas de
-                seguridad que los atacantes podrían aprovechar.
+                Fíjate en correos o mensajes con errores gramaticales,
+                solicitudes urgentes o enlaces sospechosos. Verifica siempre las
+                direcciones de correo electrónico.
               </p>
             </section>
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                3. Navega de forma segura en internet
+                3. Protección contra el phishing
               </h2>
               <p className="text-gray-600 leading-relaxed text-center">
-                Conéctate solo a redes Wi-Fi seguras. Si necesitas usar una red
-                pública, no accedas a cuentas sensibles y considera usar una
-                VPN. Evita hacer clic en enlaces sospechosos y verifica siempre
-                las direcciones web.
+                No hagas clic en enlaces de correos no solicitados. Escribe
+                directamente la dirección web en tu navegador y confirma la
+                autenticidad del remitente.
               </p>
             </section>
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                4. Realiza copias de seguridad
+                4. Activa filtros de seguridad
               </h2>
               <p className="text-gray-600 leading-relaxed text-center">
-                Realiza respaldos periódicos de tus datos importantes en discos
-                externos o servicios en la nube. Así podrás recuperarlos en caso
-                de pérdida o ataque.
+                Configura tu correo electrónico para filtrar mensajes
+                sospechosos. Usa navegadores y herramientas que bloqueen sitios
+                de phishing conocidos.
               </p>
             </section>
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                5. Aprende a detectar problemas
+                5. Qué hacer si eres víctima
               </h2>
               <p className="text-gray-600 leading-relaxed text-center">
-                Presta atención a señales de alerta como rendimiento lento,
-                ventanas emergentes constantes o aplicaciones desconocidas. Usa
-                un antivirus para detectar y eliminar posibles amenazas.
-              </p>
-            </section>
-            <section>
-              <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                6. Qué hacer en caso de problemas
-              </h2>
-              <p className="text-gray-600 leading-relaxed text-center">
-                Si crees que tu cuenta ha sido hackeada, cambia tu contraseña
-                inmediatamente y activa la verificación en dos pasos. Si
-                descargaste un archivo sospechoso, analiza tu dispositivo con un
-                antivirus y elimina el archivo si es necesario.
+                Si has compartido información en un sitio falso, cambia tus
+                contraseñas de inmediato y contacta a tu banco o proveedor de
+                servicios para reportar la situación.
               </p>
             </section>
           </div>
@@ -124,4 +111,4 @@ function ContentPage() {
   );
 }
 
-export default ContentPage;
+export default PhishingPage;

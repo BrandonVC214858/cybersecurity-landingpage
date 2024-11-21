@@ -2,26 +2,25 @@ import React from "react";
 import { NavbarSimple } from "../components/Navbar";
 import { FooterWithLogo } from "../components/Footer";
 
-function ContentPage() {
+function CyberAttacksPage() {
   return (
     <div className="bg-white flex flex-col min-h-screen">
       <header>
         <NavbarSimple />
         <h1 className="text-4xl font-bold text-gray-800 text-center m-6">
-          Fundamentos de Seguridad de la Información
+          Ataques Informáticos
         </h1>
       </header>
       <main className="flex-grow flex items-center justify-center">
         {/* Main Content Container */}
-
         <div className="max-w-4xl mx-auto bg-white shadow-md rounded-lg p-6">
           <h1 className="text-2xl font-bold text-gray-800 mb-4 text-center">
-            Guía Básica para Proteger tu Información
+            Guía para Identificar y Prevenir Ataques Informáticos
           </h1>
           <p className="text-gray-600 leading-relaxed text-center mb-6">
-            Si no tienes conocimientos previos sobre seguridad de la
-            información, esta guía te ayudará a proteger tus datos, dispositivos
-            y cuentas. Sigue estos pasos para mejorar tu seguridad.
+            Los ataques informáticos son una amenaza creciente para la seguridad
+            digital. Esta guía te ayudará a identificar los tipos más comunes de
+            ataques y a protegerte contra ellos.
           </p>
           {/* Images Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -29,23 +28,24 @@ function ContentPage() {
             <div className="flex flex-col items-center">
               <img
                 src="https://via.placeholder.com/300"
-                alt="Protección de dispositivos"
+                alt="Ataques Phishing"
                 className="rounded-lg shadow-md"
               />
               <p className="mt-3 text-gray-700 text-center">
-                Mantén tus dispositivos actualizados para evitar
-                vulnerabilidades.
+                Presta atención a correos sospechosos que busquen robar tus
+                datos.
               </p>
             </div>
             {/* Image 2 */}
             <div className="flex flex-col items-center">
               <img
                 src="https://via.placeholder.com/300"
-                alt="Contraseñas seguras"
+                alt="Ataques DDoS"
                 className="rounded-lg shadow-md"
               />
               <p className="mt-3 text-gray-700 text-center">
-                Usa contraseñas seguras y únicas para cada cuenta.
+                Los ataques DDoS buscan saturar tus sistemas y hacerlos
+                inoperantes.
               </p>
             </div>
           </div>
@@ -53,65 +53,60 @@ function ContentPage() {
           <div className="space-y-6">
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                1. Protege tus cuentas y contraseñas
+                1. Reconoce el Phishing
               </h2>
               <p className="text-gray-600 leading-relaxed text-center">
-                Usa contraseñas de al menos 12 caracteres que incluyan letras,
-                números y símbolos. No uses información personal como tu nombre
-                o fecha de nacimiento. Activa la verificación en dos pasos en
-                tus cuentas más importantes.
+                El phishing utiliza correos o mensajes falsos para robar tus
+                datos personales o financieros. Verifica siempre la dirección
+                del remitente y evita hacer clic en enlaces sospechosos.
               </p>
             </section>
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                2. Actualiza tus dispositivos
+                2. Protección contra ransomware
               </h2>
               <p className="text-gray-600 leading-relaxed text-center">
-                Configura tus dispositivos para que se actualicen
-                automáticamente. Las actualizaciones corrigen problemas de
-                seguridad que los atacantes podrían aprovechar.
+                Realiza copias de seguridad periódicas y evita descargar
+                archivos de fuentes no confiables. Utiliza software de
+                protección actualizado.
               </p>
             </section>
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                3. Navega de forma segura en internet
+                3. Cuidado con ataques de fuerza bruta
               </h2>
               <p className="text-gray-600 leading-relaxed text-center">
-                Conéctate solo a redes Wi-Fi seguras. Si necesitas usar una red
-                pública, no accedas a cuentas sensibles y considera usar una
-                VPN. Evita hacer clic en enlaces sospechosos y verifica siempre
-                las direcciones web.
+                Usa contraseñas complejas y únicas para cada cuenta. Activa la
+                verificación en dos pasos siempre que sea posible.
               </p>
             </section>
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                4. Realiza copias de seguridad
+                4. Protege tus redes contra DDoS
               </h2>
               <p className="text-gray-600 leading-relaxed text-center">
-                Realiza respaldos periódicos de tus datos importantes en discos
-                externos o servicios en la nube. Así podrás recuperarlos en caso
-                de pérdida o ataque.
+                Implementa soluciones como firewalls y sistemas de prevención de
+                intrusiones. Limita el acceso a tus sistemas críticos.
               </p>
             </section>
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                5. Aprende a detectar problemas
+                5. Mantente alerta contra spyware
               </h2>
               <p className="text-gray-600 leading-relaxed text-center">
-                Presta atención a señales de alerta como rendimiento lento,
-                ventanas emergentes constantes o aplicaciones desconocidas. Usa
-                un antivirus para detectar y eliminar posibles amenazas.
+                El spyware recopila datos sin tu consentimiento. Instala
+                herramientas anti-spyware y verifica regularmente tu sistema.
               </p>
             </section>
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                6. Qué hacer en caso de problemas
+                6. Cómo actuar ante un ataque
               </h2>
               <p className="text-gray-600 leading-relaxed text-center">
-                Si crees que tu cuenta ha sido hackeada, cambia tu contraseña
-                inmediatamente y activa la verificación en dos pasos. Si
-                descargaste un archivo sospechoso, analiza tu dispositivo con un
-                antivirus y elimina el archivo si es necesario.
+                Si crees que has sido víctima de un ataque, desconecta tus
+                dispositivos de la red, cambia tus contraseñas y busca ayuda
+                especializada. Reporta el incidente a las autoridades
+                correspondientes.
               </p>
             </section>
           </div>
@@ -124,4 +119,4 @@ function ContentPage() {
   );
 }
 
-export default ContentPage;
+export default CyberAttacksPage;
