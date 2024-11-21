@@ -3,8 +3,7 @@ import { Typography } from "@material-tailwind/react";
 export function FooterWithLogo() {
   return (
     <footer className="w-full bg-white p-8">
-      <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-white text-center md:justify-between">
-        <img src="./public/proteger.png" alt="logo" className="w-10" />
+      <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-white text-center">
         <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
           <li>
             <Typography
