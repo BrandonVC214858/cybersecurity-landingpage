@@ -15,19 +15,19 @@ function SoftwareVulnerabilitiesPage() {
         {/* Main Content Container */}
         <div className="max-w-4xl mx-auto bg-white shadow-md rounded-lg p-6">
           <h1 className="text-2xl font-bold text-gray-800 mb-4 text-center">
-            Guía para Identificar y Prevenir Vulnerabilidades de Software
+            Mantén Tu Tecnología Libre de Fallos
           </h1>
           <p className="text-gray-600 leading-relaxed text-center mb-6">
-            El software es una de las principales puertas de entrada para los
-            atacantes. Identificar y mitigar vulnerabilidades en el software es
-            crucial para mantener la seguridad de tus sistemas.
+            El software que usamos a diario, desde aplicaciones hasta sistemas operativos, puede tener puntos débiles que los atacantes explotan para acceder a 
+            información sensible o dañar sistemas. Estas vulnerabilidades, si no se abordan, representan un riesgo considerable. Aquí te explicamos dos problemas 
+            comunes y cómo mantener tu software protegido.
           </p>
           {/* Images Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             {/* Image 1 */}
             <div className="flex flex-col items-center">
               <img
-                src="https://via.placeholder.com/300"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSct5K7PZwhk1VRnaGTUdrNZQEcuggqZJo1zA&s"
                 alt="Software actualizado"
                 className="rounded-lg shadow-md"
               />
@@ -38,7 +38,7 @@ function SoftwareVulnerabilitiesPage() {
             {/* Image 2 */}
             <div className="flex flex-col items-center">
               <img
-                src="https://via.placeholder.com/300"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkRxdE01XxfIVd2AHvC6953kzR3d6hn-hkgg&s"
                 alt="Uso de software legítimo"
                 className="rounded-lg shadow-md"
               />
@@ -51,64 +51,49 @@ function SoftwareVulnerabilitiesPage() {
           <div className="space-y-6">
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                1. Actualiza tu software regularmente
+                1. Errores de Programación
               </h2>
-              <p className="text-gray-600 leading-relaxed text-center">
-                Las actualizaciones de software suelen incluir parches de
-                seguridad para corregir vulnerabilidades conocidas. Configura
-                las actualizaciones automáticas cuando sea posible.
-              </p>
+              <ul className="text-gray-600 leading-relaxed text-center">
+                Los errores en el código, conocidos como bugs, son como puertas traseras accidentales que los atacantes pueden usar para acceder a datos o sistemas. 
+                Incluso los programas más populares pueden tener fallos ocultos que representan un riesgo.
+                <li>¿Cómo prevenirlos?</li>
+                <li>Revisiones de código: Asegúrate de que el software pase por revisiones exhaustivas durante su desarrollo para detectar errores antes de que se conviertan en problemas.</li>
+                <li>Pruebas de seguridad: Realiza pruebas regulares en busca de posibles fallos. Estas pruebas deben ser parte integral del ciclo de desarrollo.</li>
+                <li>Pruebas de penetración: Simula ataques en el sistema para identificar y solucionar vulnerabilidades antes de que los hackers lo hagan.</li>
+              </ul>
             </section>
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                2. Descarga solo de fuentes confiables
+                2. Falta de Actualizaciones
               </h2>
-              <p className="text-gray-600 leading-relaxed text-center">
-                Evita descargar software desde sitios web sospechosos o
-                plataformas no oficiales. Utiliza tiendas oficiales y revisa las
-                reseñas de otros usuarios.
-              </p>
+              <ul className="text-gray-600 leading-relaxed text-center">
+              No actualizar el software es como no reparar una cerradura rota en tu casa: los atacantes saben exactamente por dónde entrar. 
+              Las actualizaciones suelen incluir parches que corrigen problemas de seguridad ya identificados.
+              <li>¿Cómo mantenerte seguro?</li>
+              <li>Política de actualización: Establece una rutina para instalar actualizaciones tan pronto como estén disponibles, priorizando aquellas que corrigen problemas de seguridad.</li>
+              <li>Gestión de vulnerabilidades: Usa herramientas que identifiquen automáticamente software desactualizado y apliquen los parches necesarios.</li>
+              <li>Conciencia del usuario: Asegúrate de estar al tanto de las alertas de seguridad para actualizar programas esenciales.</li>
+              </ul>
             </section>
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                3. Cuidado con el software desactualizado
+                La Importancia de Cuidar el Software
               </h2>
-              <p className="text-gray-600 leading-relaxed text-center">
-                El software que ya no recibe soporte del desarrollador puede ser
-                una gran vulnerabilidad. Considera alternativas actualizadas y
-                seguras.
-              </p>
+              <ul className="text-gray-600 leading-relaxed text-center">
+                <li>Tu software es el motor de todo lo que haces en tu dispositivo. Ignorar las vulnerabilidades es abrirle la puerta a problemas que pueden afectar tu privacidad y la funcionalidad de tus herramientas digitales.</li>
+                <li>Con acciones simples como mantener tus programas actualizados y realizar pruebas regulares, puedes protegerte de muchos riesgos. Recuerda: un software seguro es sinónimo de tranquilidad en un entorno digital cada vez más complejo.</li>
+              </ul>
             </section>
-            <section>
-              <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                4. Usa un antivirus confiable
-              </h2>
-              <p className="text-gray-600 leading-relaxed text-center">
-                Instala y mantén actualizado un software antivirus confiable.
-                Este puede detectar y bloquear intentos de explotación de
-                vulnerabilidades en tiempo real.
+            <div className="flex flex-col items-center">
+              <img
+                src="https://hapy.co/wp-content/smush-webp/2024/02/types-of-software-bugs-768x403.jpg.webp"
+                alt="Software actualizado"
+                className="rounded-lg shadow-md max-w-xs"
+              />
+              <p className="mt-3 text-gray-700 text-center">
+                Reporta los problemas que encuentres en aplicaciones.
               </p>
-            </section>
-            <section>
-              <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                5. Implementa permisos mínimos
-              </h2>
-              <p className="text-gray-600 leading-relaxed text-center">
-                Configura los permisos de acceso de tu software para que solo
-                tenga acceso a los recursos necesarios. Esto limita el daño en
-                caso de una vulnerabilidad.
-              </p>
-            </section>
-            <section>
-              <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                6. Capacítate en el uso seguro de software
-              </h2>
-              <p className="text-gray-600 leading-relaxed text-center">
-                Aprende a identificar posibles riesgos asociados con el software
-                que usas, como permisos excesivos, configuraciones
-                predeterminadas inseguras o alertas sospechosas.
-              </p>
-            </section>
+            </div>
           </div>
         </div>
       </main>

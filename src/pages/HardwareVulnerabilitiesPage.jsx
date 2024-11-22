@@ -15,20 +15,19 @@ function HardwareVulnerabilitiesPage() {
         {/* Main Content Container */}
         <div className="max-w-4xl mx-auto bg-white shadow-md rounded-lg p-6">
           <h1 className="text-2xl font-bold text-gray-800 mb-4 text-center">
-            Guía para Identificar y Prevenir Vulnerabilidades de Hardware
+            Protegiendo la Base de Nuestros Sistemas
           </h1>
           <p className="text-gray-600 leading-relaxed text-center mb-6">
-            El hardware, desde computadoras hasta dispositivos IoT, es
-            fundamental en la tecnología actual. Es importante entender las
-            vulnerabilidades comunes y cómo proteger estos equipos de posibles
-            amenazas.
+            Aunque a menudo pasamos por alto el hardware, este es el corazón de nuestros dispositivos y puede ser un punto vulnerable 
+            si no se protege adecuadamente. Las vulnerabilidades de hardware son fallos que pueden permitir ataques con consecuencias graves, 
+            como el acceso no autorizado o el control completo de un sistema. A continuación, te explicamos dos riesgos comunes y cómo protegerte.
           </p>
           {/* Images Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             {/* Image 1 */}
             <div className="flex flex-col items-center">
               <img
-                src="https://via.placeholder.com/300"
+                src="https://retemex.mx/wp-content/uploads/2022/05/08_PROTEGER-TU-DISPOSITIVO-MOVIL.png"
                 alt="Protección de hardware"
                 className="rounded-lg shadow-md"
               />
@@ -40,7 +39,7 @@ function HardwareVulnerabilitiesPage() {
             {/* Image 2 */}
             <div className="flex flex-col items-center">
               <img
-                src="https://via.placeholder.com/300"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDcbCirYCu0rUoE6ad9HsM0dqP7NEGHZf_Jg&s"
                 alt="Firmware actualizado"
                 className="rounded-lg shadow-md"
               />
@@ -54,27 +53,34 @@ function HardwareVulnerabilitiesPage() {
           <div className="space-y-6">
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                1. Actualiza el firmware y los drivers
+                1. Rowhammer
               </h2>
-              <p className="text-gray-600 leading-relaxed text-center">
-                Mantén siempre actualizado el firmware y los drivers de tus
-                dispositivos. Las actualizaciones corrigen vulnerabilidades que
-                los atacantes podrían explotar.
-              </p>
+              <ul className="text-gray-600 leading-relaxed text-center">
+                Este ataque afecta la memoria RAM y utiliza interferencias para acceder a información sin autorización. 
+                Imagina que alguien golpea la pared de tu casa lo suficiente como para mover cosas del otro lado. Eso es, en esencia, 
+                lo que hace Rowhammer en la memoria de tu dispositivo.
+                <li>¿Cómo prevenirlo?</li>
+                <li>Control de acceso: Asegúrate de que solo usuarios autorizados puedan acceder a los dispositivos críticos y establece políticas de acceso claras.</li>
+                <li>Actualizaciones de firmware: Mantén el firmware actualizado para solucionar vulnerabilidades conocidas.</li>
+                <li>Tecnologías de memoria protegida: Usa hardware que implemente medidas específicas contra Rowhammer, como ECC (Error-Correcting Code).</li>
+              </ul>
             </section>
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                2. Asegura el acceso físico
+                2. BIOS
               </h2>
-              <p className="text-gray-600 leading-relaxed text-center">
-                Protege el acceso físico a tus dispositivos. Usa candados de
-                seguridad en laptops y asegúrate de que solo personal autorizado
-                pueda acceder a los servidores y equipos sensibles.
-              </p>
+              <ul className="text-gray-600 leading-relaxed text-center">
+                El BIOS es el software que inicia tu computadora. Si es vulnerado, un atacante puede obtener control total de tu sistema. 
+                Es como si alguien manipulase la llave de tu casa para entrar sin que te des cuenta.
+                <li>¿Cómo protegerse?</li>
+                <li>Protección del BIOS: Configura contraseñas para acceder a su configuración y deshabilita el arranque desde dispositivos externos para evitar accesos no deseados.</li>
+                <li>Actualización regular: Asegúrate de actualizar el BIOS periódicamente para corregir fallos de seguridad.</li>
+                <li>Secure Boot: Activa esta función para garantizar que solo se ejecute software confiable al encender tu computadora.</li>
+              </ul>
             </section>
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                3. Cuidado con dispositivos externos
+                La Importancia de Proteger el Hardware
               </h2>
               <p className="text-gray-600 leading-relaxed text-center">
                 Evita conectar dispositivos externos como USBs o discos duros de
@@ -82,35 +88,7 @@ function HardwareVulnerabilitiesPage() {
                 comprometa tu hardware.
               </p>
             </section>
-            <section>
-              <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                4. Monitorea el estado del hardware
-              </h2>
-              <p className="text-gray-600 leading-relaxed text-center">
-                Usa herramientas de monitoreo para identificar fallas o
-                comportamientos anómalos en el hardware. Detectar problemas
-                temprano puede prevenir daños mayores.
-              </p>
-            </section>
-            <section>
-              <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                5. Evita sobrecalentamientos
-              </h2>
-              <p className="text-gray-600 leading-relaxed text-center">
-                Mantén tus dispositivos bien ventilados y evita sobrecargarlos.
-                El sobrecalentamiento puede provocar fallos críticos y reducir
-                la vida útil del hardware.
-              </p>
-            </section>
-            <section>
-              <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                6. Considera cifrado físico
-              </h2>
-              <p className="text-gray-600 leading-relaxed text-center">
-                Usa dispositivos con opciones de cifrado físico para proteger
-                los datos almacenados en caso de robo o pérdida.
-              </p>
-            </section>
+
           </div>
         </div>
       </main>
