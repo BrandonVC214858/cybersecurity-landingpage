@@ -15,7 +15,8 @@ function HomePage() {
         </div>
       </header>
       <main className="container mx-auto">
-        <section className="grid grid-cols-2">
+        {/* Primera sección de tarjetas */}
+        <section className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4 p-4">
           <HorizontalCard
             date={"11/18/2024"}
             title={"Fundamentos de seguridad"}
@@ -61,7 +62,9 @@ function HomePage() {
             reference={"vulnerabilidades_hardware"}
           />
         </section>
-        <section className="grid grid-cols-3 ">
+
+        {/* Segunda sección de tarjetas */}
+        <section className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
           <HorizontalCard
             date={"11/18/2024"}
             title={"Vulnerabilidades de software"}
