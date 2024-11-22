@@ -16,21 +16,21 @@ function ContentPage() {
 
         <div className="max-w-4xl mx-auto bg-white shadow-md rounded-lg p-6">
           <h1 className="text-2xl font-bold text-gray-800 mb-4 text-center">
-            Guía Básica para Proteger tu Información
+            Lo que debemos saber
           </h1>
           <p className="text-gray-600 leading-relaxed text-center mb-6">
-            Si no tienes conocimientos previos sobre seguridad de la
-            información, esta guía te ayudará a proteger tus datos, dispositivos
-            y cuentas. Sigue estos pasos para mejorar tu seguridad.
+            En el mundo digital actual, proteger nuestra información se ha vuelto tan importante como proteger nuestras pertenencias físicas. 
+            La seguridad de la información no es solo un tema para expertos en tecnología; 
+            es algo que afecta a todos los que usamos dispositivos conectados.
           </p>
           {/* Images Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-6 mb-6">
             {/* Image 1 */}
             <div className="flex flex-col items-center">
               <img
-                src="https://via.placeholder.com/300"
+                src="https://blog.desdelinux.net/wp-content/uploads/2019/07/seguridad-informacion-imagen-destacada-blog-desdelinux-830x596.jpg"
                 alt="Protección de dispositivos"
-                className="rounded-lg shadow-md"
+                className="rounded-lg shadow-md max-w-xs"
               />
               <p className="mt-3 text-gray-700 text-center">
                 Mantén tus dispositivos actualizados para evitar
@@ -38,82 +38,46 @@ function ContentPage() {
               </p>
             </div>
             {/* Image 2 */}
-            <div className="flex flex-col items-center">
-              <img
-                src="https://via.placeholder.com/300"
-                alt="Contraseñas seguras"
-                className="rounded-lg shadow-md"
-              />
-              <p className="mt-3 text-gray-700 text-center">
-                Usa contraseñas seguras y únicas para cada cuenta.
-              </p>
-            </div>
+
           </div>
           {/* Guide Sections */}
           <div className="space-y-6">
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                1. Protege tus cuentas y contraseñas
+                ¿Qué es la Seguridad de la Información?
               </h2>
-              <p className="text-gray-600 leading-relaxed text-center">
-                Usa contraseñas de al menos 12 caracteres que incluyan letras,
-                números y símbolos. No uses información personal como tu nombre
-                o fecha de nacimiento. Activa la verificación en dos pasos en
-                tus cuentas más importantes.
-              </p>
+              <ul className="text-gray-600 leading-relaxed text-center">
+                Imagina que tu información personal, como contraseñas, fotos o documentos, es como un tesoro. 
+                La seguridad de la información se trata de proteger ese tesoro de personas no autorizadas, asegurando que:
+                <li>Solo tú o las personas autorizadas pueden acceder a ella.</li>
+                <li>Se mantenga intacta y sin cambios.</li>
+                <li>Esté disponible siempre que la necesites.</li>
+              </ul>
             </section>
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                2. Actualiza tus dispositivos
+                El Papel Fundamental del Usuario
               </h2>
-              <p className="text-gray-600 leading-relaxed text-center">
-                Configura tus dispositivos para que se actualicen
-                automáticamente. Las actualizaciones corrigen problemas de
-                seguridad que los atacantes podrían aprovechar.
-              </p>
+              <ul className="text-gray-600 leading-relaxed text-center">
+                ¿Sabías que la mayoría de los problemas de seguridad ocurren por errores humanos? 
+                Desde hacer clic en enlaces sospechosos hasta usar contraseñas débiles, nuestras acciones son clave para mantener la seguridad.
+                <li>Sé consciente: Antes de abrir un enlace o descargar algo, piensa si es confiable.</li>
+                <li>Edúcate: Aprende las mejores prácticas para proteger tus datos.</li>
+                <li>Actúa con cuidado: Usa contraseñas fuertes y evita compartir información confidencial.</li>
+              </ul>
             </section>
             <section>
               <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                3. Navega de forma segura en internet
+                ¿Por Qué es Importante?
               </h2>
               <p className="text-gray-600 leading-relaxed text-center">
-                Conéctate solo a redes Wi-Fi seguras. Si necesitas usar una red
-                pública, no accedas a cuentas sensibles y considera usar una
-                VPN. Evita hacer clic en enlaces sospechosos y verifica siempre
-                las direcciones web.
+                La seguridad de la información no solo protege datos, sino también tu tranquilidad. 
+                Es la base para confiar en el mundo digital y evitar problemas que podrían afectar tanto tu vida personal como profesional.
+                Proteger nuestra información es un trabajo conjunto entre la tecnología y las decisiones que tomamos cada día. 
+                Con pequeños cambios en nuestros hábitos, podemos hacer una gran diferencia en nuestra seguridad.
               </p>
             </section>
-            <section>
-              <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                4. Realiza copias de seguridad
-              </h2>
-              <p className="text-gray-600 leading-relaxed text-center">
-                Realiza respaldos periódicos de tus datos importantes en discos
-                externos o servicios en la nube. Así podrás recuperarlos en caso
-                de pérdida o ataque.
-              </p>
-            </section>
-            <section>
-              <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                5. Aprende a detectar problemas
-              </h2>
-              <p className="text-gray-600 leading-relaxed text-center">
-                Presta atención a señales de alerta como rendimiento lento,
-                ventanas emergentes constantes o aplicaciones desconocidas. Usa
-                un antivirus para detectar y eliminar posibles amenazas.
-              </p>
-            </section>
-            <section>
-              <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">
-                6. Qué hacer en caso de problemas
-              </h2>
-              <p className="text-gray-600 leading-relaxed text-center">
-                Si crees que tu cuenta ha sido hackeada, cambia tu contraseña
-                inmediatamente y activa la verificación en dos pasos. Si
-                descargaste un archivo sospechoso, analiza tu dispositivo con un
-                antivirus y elimina el archivo si es necesario.
-              </p>
-            </section>
+
           </div>
         </div>
       </main>
